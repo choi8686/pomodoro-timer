@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="utf-8">
+    <title>POMODORO TIMER</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>POMODORO CLOCK</h1>
+      <div class="pomodoro">
+      <div class="time-display">25:00</div>
+
+        <div class="buttons">
+          <button class="btn" id="start-btn" onclick="clickStart()">START</button>
+          <button class="btn" id="stop-btn" onclick="clickStop()">STOP</button>
+          <button class="btn" id="reset-btn">RESET</button>
+        </div>
+
+      </div>
+
+      <div class="setting-time">
+
+        <div id="work-time">
+          <p>WORK DURATION</p>
+        <button class="btn-settings" id="work-plus">+</button>
+        <div><span id="work-min">25</span> mins</div>
+        <button class="btn-settings" id="work-minus">-</button>
+        </div>
+
+        <div id="break-time">
+          <p>BREAK DURATION</p>
+        <button class="btn-settings" id="break-plus">+</button>
+         <div><span id="break-min">5</span> mins</div>
+        <button class="btn-settings" id="break-minus">-</button>
+        </div>
+
+      </div>
+    </div>
+  <script src="timer.js"></script>
+  </body>
+</html>
