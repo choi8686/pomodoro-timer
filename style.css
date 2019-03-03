@@ -1,29 +1,95 @@
 html, body
 {
+    width: 100%;
     height: 100%;
 }
 
 body
-{
+{   background-image: url("kylie-paz-1139695-unsplash.jpg");
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
     display: table;
-    margin: 0 auto;
+font-family: 'work sans', sans-serif;
+
+
 }
 
+h1{
+  position: relative;
+  display: inline-block;
+
+  width: 50%;
+  padding: 1em;
+  color: white;
+
+}
+p{
+  color: white;
+}
 .container
 {
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
+  width: 60%;
+height: 60%;
+margin: 40px auto;
+text-align: center;
 }
 
-.container{
-  text-align: center;
-}
+.time-display {
+  display: inline-block;
+  color: white;
 
-.time-display{
-  padding: 150px;
-}
+  font-size: 12em;
+  text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
+  }
+  .time-display:after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: .06em; left: .06em;
+    z-index: -1;
+    text-shadow: none;
+    background-image:
+      linear-gradient(
+        45deg,
+        transparent 45%,
+        hsla(48,20%,90%,1) 45%,
+        hsla(48,20%,90%,1) 55%,
+        transparent 0
+        );
+    background-size: .05em .05em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shad-anim 15s linear infinite;
+    }
+
+@keyframes shad-anim {
+  0% {background-position: 0 0}
+  0% {background-position: 100% -100%}
+  }
+
 
 .buttons{
   margin-bottom: 100px;
+}
+.btn, .btn-settings{
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+.timetable{
+  border: 1px;
+  solid: gold;
+  float: left;
+  width: 33%;
+}
+
+.setting-time{
+ position: relative;
+ display: flex;
+justify-content: space-evenly;
 }

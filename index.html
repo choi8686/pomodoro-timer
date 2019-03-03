@@ -2,41 +2,48 @@
 <html lang="en" dir="ltr">
 <link rel="stylesheet" href="style.css">
   <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta charset="utf-8">
     <title>POMODORO TIMER</title>
   </head>
   <body>
     <div class="container">
       <h1>POMODORO CLOCK</h1>
+      <h4 id='current' style='color:white;'>Work Time</h4>
       <div class="pomodoro">
+
+
       <div class="time-display">25:00</div>
 
         <div class="buttons">
-          <button class="btn" id="start-btn">START</button>
-          <button class="btn" id="stop-btn">STOP</button>
-          <button class="btn" id="reset-btn">RESET</button>
+          <button class="btn" id="start-btn"><i class="fas fa-play"></i></button>
+          <button class="btn" id="stop-btn"><i class="fas fa-stop"></i></button>
+          <button class="btn" id="reset-btn"><i class="fas fa-power-off"></i></button>
         </div>
 
       </div>
 
       <div class="setting-time">
 
-        <div id="work-time">
+        <div id="work-time" class="timetable">
           <p>WORK DURATION</p>
-        <button class="btn-settings" id="work-plus">+</button>
+        <button class="btn-settings" id="work-plus"><i class="fas fa-plus"></i></button>
         <div><span id="work-min">25</span> mins</div>
-        <button class="btn-settings" id="work-minus">-</button>
+        <button class="btn-settings" id="work-minus"><i class="fas fa-minus"></i></button>
         </div>
 
         <div id="break-time">
           <p>BREAK DURATION</p>
-        <button class="btn-settings" id="break-plus">+</button>
+        <button class="btn-settings" id="break-plus"><i class="fas fa-plus fasex"></i></button>
          <div><span id="break-min">5</span> mins</div>
-        <button class="btn-settings" id="break-minus">-</button>
+        <button class="btn-settings" id="break-minus"><i class="fas fa-minus fasss"></i></button>
         </div>
 
       </div>
     </div>
+
+
   <script src="timer.js"></script>
+
   </body>
 </html>
